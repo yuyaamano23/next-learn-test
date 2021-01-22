@@ -1,15 +1,17 @@
 import Link from "next/link";
 import Head from "next/head";
-import styled from "styled-components";
+// import styled from "styled-components";
+import Layout from "../../components/layout";
 
 export default function FirstPost() {
-  const Container = styled.div`
-    max-width: 36rem;
-    padding: 0 1rem;
-    margin: 3rem auto 6rem;
-  `;
+  //   const Container = styled.div`
+  //     max-width: 36rem;
+  //     padding: 0 1rem;
+  //     margin: 3rem auto 6rem;
+  //   `;
   return (
-    <Container>
+    <Layout>
+      {/* <Container> */}
       <Head>
         <title>First Post</title>
       </Head>
@@ -19,6 +21,7 @@ export default function FirstPost() {
           <a>Back to home</a>
         </Link>
       </h2>
-    </Container>
+      {/* </Container> */}
+    </Layout>
   );
 }
