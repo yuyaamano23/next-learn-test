@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { getSortedPostsData } from "../lib/posts";
 
-export async function getStaticProps() {
+export async function getServerSideProps(context) {
   const allPostsData = getSortedPostsData();
   return {
     props: {
